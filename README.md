@@ -51,6 +51,7 @@ monolithic chain.
 - **2x2 MIMO**: MMSE strictly beats ZF at every tested SNR; both show the expected diversity-order-1 asymptotic decay. Notably, MMSE crosses below the SISO Rayleigh reference at moderate-to-high SNR due to receive-diversity gain from the second antenna outweighing the interference-separation penalty.
 - **Fixed-point C++ port**: bit-exact match (every intermediate Q1.15 sample, not just final bits) between the Python golden model and the C++ implementation.
 - ![BPSK/QPSK BER over AWGN](ber_awgn_plot.png)
+- ![BPSK/QPSK BER with RRC pulse shaping vs theory](ber_rrc_plot.png)
 - ![OFDM multipath BER vs Rayleigh theory](ofdm_known_channel_ber.png)
 - ![OFDM channel estimation: perfect CSI vs LS vs MMSE](ofdm_channel_estimation_ber.png)
 - ![LDPC coding gain vs uncoded BPSK](ldpc_coding_gain.png)
