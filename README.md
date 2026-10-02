@@ -50,6 +50,13 @@ monolithic chain.
 - **Link adaptation**: adaptive MCS selection achieves ~1.5x throughput over a fixed robust MCS at 5 dB SNR by switching between 3 MCS levels based on measured BLER.
 - **2x2 MIMO**: MMSE strictly beats ZF at every tested SNR; both show the expected diversity-order-1 asymptotic decay. Notably, MMSE crosses below the SISO Rayleigh reference at moderate-to-high SNR due to receive-diversity gain from the second antenna outweighing the interference-separation penalty.
 - **Fixed-point C++ port**: bit-exact match (every intermediate Q1.15 sample, not just final bits) between the Python golden model and the C++ implementation.
+- ![BPSK/QPSK BER over AWGN](ber_awgn_plot.png)
+- ![OFDM multipath BER vs Rayleigh theory](ofdm_known_channel_ber.png)
+- ![OFDM channel estimation: perfect CSI vs LS vs MMSE](ofdm_channel_estimation_ber.png)
+- ![LDPC coding gain vs uncoded BPSK](ldpc_coding_gain.png)
+- ![Link adaptation throughput](link_adaptation_throughput.png)
+- ![2x2 MIMO ZF vs MMSE](mimo_2x2_ber.png)
+- ![RRC matched-filter eye diagram](eye_diagram.png)
 
 ## Engineering notes (bugs found and fixed — not hidden)
 
